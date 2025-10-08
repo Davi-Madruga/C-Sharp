@@ -36,6 +36,9 @@ namespace Cronometro
                 case 5:
                     Sair();
                     break;
+                default:
+                    Menu();
+                    break;
             }
         }
         static void CronometroCompleto()
@@ -127,7 +130,8 @@ namespace Cronometro
         }
         static void Sair()
         {
-
+            Console.WriteLine("Saindo...");
+            Environment.Exit(0);
         }
     }
 }
