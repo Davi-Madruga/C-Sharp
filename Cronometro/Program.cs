@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Cronometro
 {
@@ -21,6 +22,7 @@ namespace Cronometro
                 int segundo = tempo % 60;
                 Console.WriteLine($"{hora}:{minuto}:{segundo}");
                 tempo++;
+                Thread.Sleep(1000);
             }
         }
     }
