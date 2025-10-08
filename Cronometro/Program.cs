@@ -102,6 +102,27 @@ namespace Cronometro
         }
         static void TemporizadorSeg()
         {
+            Console.Clear();
+            Console.WriteLine("(x)s = segundos");
+            Console.WriteLine("(x)m = minutos");
+            Console.WriteLine("Quanto tempo deseja contar?");
+            string data = Console.ReadLine().ToLower();
+            char tipo = char.Parse(data.Substring(data.Length - 1, 1));
+            int tempoInicial = int.Parse(data.Substring(0, data.Length - 1));
+            short multiplicador = 1;
+            if (tipo == 'm')
+                multiplicador = 60;
+            int tempoTotal = tempoInicial * multiplicador;
+            while (tempoTotal >= 0)
+            {
+                Console.Clear();
+                Console.WriteLine(tempoTotal);
+                tempoTotal--;
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("TRRRRIN!! TRRRRIN!!");
+            Console.ReadKey();
+            Menu();
 
         }
         static void Sair()
