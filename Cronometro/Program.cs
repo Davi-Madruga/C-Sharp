@@ -41,9 +41,9 @@ namespace Cronometro
         static void CronometroCompleto()
         {
             Console.Clear();
-            int tempoInicial = int.Parse(Console.ReadLine());
+            int tempoFinal = int.Parse(Console.ReadLine());
             int tempo = 0;
-            while (tempo <= tempoInicial)
+            while (tempo <= tempoFinal)
             {
                 Console.Clear();
                 int hora = tempo / 3600;
@@ -59,7 +59,26 @@ namespace Cronometro
         }
         static void CronometroSeg()
         {
-
+            Console.Clear();
+            Console.WriteLine("(x)s = segundos");
+            Console.WriteLine("(x)m = minutos");
+            Console.WriteLine("Quanto tempo deseja contar?");
+            string data = Console.ReadLine().ToLower();
+            char tipo = char.Parse(data.Substring(data.Length - 1, 1));
+            int tempoFinal = int.Parse(data.Substring(0, data.Length - 1));
+            short multiplicador = 1;
+            int tempo = 0;
+            if (tipo == 'm')
+                multiplicador = 60;
+            while (tempo <= tempoFinal * multiplicador)
+            {
+                Console.Clear();
+                Console.WriteLine(tempo);
+                tempo++;
+                Thread.Sleep(1000);
+            }
+            Console.ReadKey();
+            Menu();
         }
         static void TemporizadorCompleto()
         {
