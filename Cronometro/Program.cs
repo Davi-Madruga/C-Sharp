@@ -53,7 +53,7 @@ namespace Cronometro
                 int hora = tempo / 3600;
                 int minuto = tempo % 3600 / 60;
                 int segundo = tempo % 60;
-                Console.WriteLine($"{hora}:{minuto}:{segundo}");
+                Console.WriteLine($"{hora:D2}:{minuto:D2}:{segundo:D2}");
                 tempo++;
                 Thread.Sleep(1000);
             }
@@ -96,7 +96,7 @@ namespace Cronometro
                 int hora = tempoInicial / 3600;
                 int minuto = tempoInicial % 3600 / 60;
                 int segundo = tempoInicial % 60;
-                Console.WriteLine($"{hora}:{minuto}:{segundo}");
+                Console.WriteLine($"{hora:D2}:{minuto:D2}:{segundo:D2}");
                 tempoInicial--;
                 Thread.Sleep(1000);
             }
