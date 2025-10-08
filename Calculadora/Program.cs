@@ -88,7 +88,8 @@ namespace C_Sharp
         }
         static void Sair()
         {
-            
+            Console.Clear();
+            System.Environment.Exit(0);
         }
     }
 }
