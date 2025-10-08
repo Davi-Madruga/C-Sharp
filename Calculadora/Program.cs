@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C_Sharp
+namespace Calculadora
 {
     class Program
     {
