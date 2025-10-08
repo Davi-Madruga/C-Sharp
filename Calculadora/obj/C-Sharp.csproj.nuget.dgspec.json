@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Davi\\Documents\\C-Sharp\\C-Sharp.csproj": {}
+    "C:\\Users\\Davi\\Documents\\C-Sharp\\Calculadora\\C-Sharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Davi\\Documents\\C-Sharp\\C-Sharp.csproj": {
+    "C:\\Users\\Davi\\Documents\\C-Sharp\\Calculadora\\C-Sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Davi\\Documents\\C-Sharp\\C-Sharp.csproj",
+        "projectUniqueName": "C:\\Users\\Davi\\Documents\\C-Sharp\\Calculadora\\C-Sharp.csproj",
         "projectName": "C-Sharp",
-        "projectPath": "C:\\Users\\Davi\\Documents\\C-Sharp\\C-Sharp.csproj",
+        "projectPath": "C:\\Users\\Davi\\Documents\\C-Sharp\\Calculadora\\C-Sharp.csproj",
         "packagesPath": "C:\\Users\\Davi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davi\\Documents\\C-Sharp\\obj\\",
+        "outputPath": "C:\\Users\\Davi\\Documents\\C-Sharp\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Davi\\AppData\\Roaming\\NuGet\\NuGet.Config"
