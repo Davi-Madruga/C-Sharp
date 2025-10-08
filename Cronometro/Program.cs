@@ -44,6 +44,7 @@ namespace Cronometro
         static void CronometroCompleto()
         {
             Console.Clear();
+            Console.WriteLine("Digite quantos segundos voce quer contar: ");
             int tempoFinal = int.Parse(Console.ReadLine());
             int tempo = 0;
             while (tempo <= tempoFinal)
@@ -87,6 +88,7 @@ namespace Cronometro
         static void TemporizadorCompleto()
         {
             Console.Clear();
+            Console.WriteLine("Quantos segundos voce tem: ");
             int tempoInicial = int.Parse(Console.ReadLine());
             while (tempoInicial >= 0)
             {
