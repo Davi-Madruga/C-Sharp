@@ -10,6 +10,7 @@ namespace C_Sharp
         }
         static void Menu()
         {
+            Console.Clear();
             Console.WriteLine("---CALCULATOR---");
             Console.WriteLine("1 - Somar");
             Console.WriteLine("2 - Subtrair");
@@ -41,6 +42,7 @@ namespace C_Sharp
         }
         static void Somar()
         {
+            Console.Clear();
             Console.WriteLine("Digite o primeiro número:");
             float numero1 = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número:");
@@ -52,6 +54,7 @@ namespace C_Sharp
         }
         static void Subtrair()
         {
+            Console.Clear();
             Console.WriteLine("Digite o primeiro número:");
             float numero1 = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número:");
@@ -64,6 +67,7 @@ namespace C_Sharp
         }
         static void Multiplicar()
         {
+            Console.Clear();
             Console.WriteLine("Digite o primeiro número:");
             float numero1 = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número:");
@@ -76,6 +80,7 @@ namespace C_Sharp
         }
         static void Dividir()
         {
+            Console.Clear();
             Console.WriteLine("Digite o primeiro número:");
             float numero1 = float.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número:");
