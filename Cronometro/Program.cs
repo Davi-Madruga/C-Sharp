@@ -77,11 +77,27 @@ namespace Cronometro
                 tempo++;
                 Thread.Sleep(1000);
             }
+            Console.WriteLine("TRRRRIN!! TRRRRIN!!");
             Console.ReadKey();
             Menu();
         }
         static void TemporizadorCompleto()
         {
+            Console.Clear();
+            int tempoInicial = int.Parse(Console.ReadLine());
+            while (tempoInicial >= 0)
+            {
+                Console.Clear();
+                int hora = tempoInicial / 3600;
+                int minuto = tempoInicial % 3600 / 60;
+                int segundo = tempoInicial % 60;
+                Console.WriteLine($"{hora}:{minuto}:{segundo}");
+                tempoInicial--;
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("TRRRRIN!! TRRRRIN!!");
+            Console.ReadKey();
+            Menu();
 
         }
         static void TemporizadorSeg()
