@@ -76,6 +76,14 @@ namespace C_Sharp
         }
         static void Dividir()
         {
+            Console.WriteLine("Digite o primeiro número:");
+            float numero1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número:");
+            float numero2 = float.Parse(Console.ReadLine());
+            float resultado = numero1 / numero2;
+            Console.WriteLine(numero1 + " / " + numero2 + " = " + resultado);
+            Console.ReadKey();
+            Menu();
             
         }
         static void Sair()
