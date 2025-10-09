@@ -8,7 +8,6 @@ namespace EditorHTML
     {
         public static void Show()
         {
-            Console.Clear();
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Clear();
@@ -26,8 +25,8 @@ namespace EditorHTML
                 file.Append(Environment.NewLine);
             }
             while (Console.ReadKey().Key != ConsoleKey.Escape);
-            Console.WriteLine("---------");
-            Console.WriteLine(" Deseja salvar o arquivo?");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Deseja salvar este arquivo?");
             Viewer.Show(file.ToString());
         }
     }

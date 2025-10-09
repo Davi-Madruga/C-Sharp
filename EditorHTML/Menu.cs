@@ -49,10 +49,8 @@ namespace EditorHTML
             Console.SetCursorPosition(3, 6);
             Console.WriteLine("1 - Abrir Arquivo");
             Console.SetCursorPosition(3, 7);
-            Console.WriteLine("2 - Criar novo Arquivo");
-            Console.SetCursorPosition(3, 8);
             Console.WriteLine("======================");
-            Console.SetCursorPosition(3, 9);
+            Console.SetCursorPosition(3, 8);
             Console.Write("Opções: ");
         }
         public static void HandleMenuOption(short option)
@@ -61,9 +59,6 @@ namespace EditorHTML
             {
                 case 1:
                     Editor.Show();
-                    break;
-                case 2:
-                    Console.WriteLine("View");
                     break;
                 case 0:
                     Console.Clear();
