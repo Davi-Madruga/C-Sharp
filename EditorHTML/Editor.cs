@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Text;
 
 namespace EditorHTML
@@ -27,6 +28,7 @@ namespace EditorHTML
             while (Console.ReadKey().Key != ConsoleKey.Escape);
             Console.WriteLine("---------");
             Console.WriteLine(" Deseja salvar o arquivo?");
+            Viewer.Show(file.ToString());
         }
     }
 }
